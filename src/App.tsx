@@ -1,22 +1,21 @@
-import Alert from "./components/Alert";
-import Button from "./components/Button";
+import List from "./components/List";
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [visible, setVisible] = useState(false);
+  const [items, setItems] = useState<string[]>([
+    "apple",
+    "banana",
+    "orange",
+  ]);
+
+  const handleDelete = (itemToDelete: string) => {
+    setItems(items.filter((item) => item !== itemToDelete));
+  };
 
   return (
     <>
-      <div>
-        <Button color="primary" onClick={() => setVisible(true)}>
-          My Button
-        </Button>
-      </div>
-      {visible ? (
-        <div>
-          <Alert onClose={() => setVisible(false)}>Hello World</Alert>
-        </div>
-      ) : null}
+      <List items={items} onDelete={handleDelete} />
     </>
   );
 }
