@@ -17,6 +17,7 @@ function App() {
   };
 
   const handleAdd = (inputValue: string) => {
+    if (inputValue.trim() === "") return;
     setItems([...items, inputValue]);
     setInputValue("");
   };
@@ -29,7 +30,7 @@ function App() {
     const updated = [...items];
     updated[index] = newValue;
     setItems(updated);
-  };
+  }
 
   return (
     <>
@@ -54,4 +55,5 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
+
