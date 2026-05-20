@@ -1,0 +1,42 @@
+/* index.css lub App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: monospace;
+}
+body {
+  background-image: linear-gradient(to bottom right, rgb(0, 6, 6), rgb(0, 20, 20));
+  min-height: 100vh;
+  margin: 0;
+}
+
+.typing-cursor {
+  opacity: 1;
+  font-size: 4rem;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.gh-button {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #058e63;
+  border-radius: 0.5rem;
+  width: 35rem;
+}
+
+.filter-green{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
