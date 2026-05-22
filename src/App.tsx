@@ -36,9 +36,12 @@ function App() {
 
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+
+      <div className="main-row" >
         <CircularImage />
-        <div style={{ display: "flex", flexDirection: "column", marginLeft: "4rem", alignContent: "center" }}>
+        <div
+          className="about-me"
+        >
           <span className="typewriter-text">
             <Typewriter text="Hi! I'm mzums" speed={100} />
           </span>
@@ -59,25 +62,20 @@ function App() {
         </div>
       </div >
       <span style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
-        <GearIcon dir={-1} rotation={rotation} color="#058e63" />
+        <GearIcon dir={-1} rotation={rotation} width="200" color="#058e63" />
       </span>
-      <span style={{ position: 'fixed', bottom: '180px', right: '20px', zIndex: 1000 }}>
+      <span style={{ position: 'fixed', bottom: '250px', right: '20px', zIndex: 1000 }}>
         <GearIcon rotation={rotation} width="80" color="#058e63" />
       </span>
-      <span style={{ position: 'fixed', bottom: '20px', right: '220px', zIndex: 1000 }}>
+      <span style={{ position: 'fixed', bottom: '50px', right: '220px', zIndex: 1000 }}>
         <GearIcon rotation={rotation} width="110" color="#058e63" />
       </span>
 
       <div style={{ height: "2rem" }}></div>
 
-      <div style={{
-        display: "flex",
-        flexDirection: "row",
-        gap: "1rem",
-        overflowX: "auto",
-        width: "100%",
-        padding: "1rem"
-      }}>
+      <div
+        className="project-row"
+      >
         <Card
           imgPath={tm}
           title="Typeman"
