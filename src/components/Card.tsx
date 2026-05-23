@@ -36,8 +36,7 @@ const Card = ({
 }) => {
     return (
         <>
-            <div style={{ width: "2rem" }}></div>
-            <div className="card" >
+            <div className="card">
                 <img
                     src={imgPath}
                     className="card-img-top"
@@ -55,8 +54,7 @@ const Card = ({
                         github
                     </a>
                 </div>
-            </div>
-            <div style={{ width: "2rem" }}></div>
+            </div >
         </>
     )
 

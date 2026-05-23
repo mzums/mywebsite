@@ -8,11 +8,11 @@ import openai from "./assets/openai.png";
 import uncyclopedia from "./assets/uncyclopedia2.png";
 import './App.css';
 import Typewriter from './components/Typewriter';
+import InfiniteAutoScroll from "./components/InfiniteAutoScroll.tsx";
 import CircularImage from "./components/CircularImage";
 import GearIcon from "./components/GearIcon";
 import Card from "./components/Card.tsx";
 import { useRef, useState, useEffect } from 'react';
-
 
 function App() {
 
@@ -32,7 +32,6 @@ function App() {
       gearRef.current.style.transform = `rotate(${rotation}deg)`;
     }
   }, [rotation]);
-
 
   return (
     <>
@@ -73,9 +72,8 @@ function App() {
 
       <div style={{ height: "2rem" }}></div>
 
-      <div
-        className="project-row"
-      >
+
+      <InfiniteAutoScroll speed={0.8} pauseOnHover={true}>
         <Card
           imgPath={tm}
           title="Typeman"
@@ -114,7 +112,7 @@ function App() {
           link="https://github.com/mzums/openai-gymnasium"
         />
 
-      </div>
+      </InfiniteAutoScroll>
     </>
 
   );
