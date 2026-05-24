@@ -2,4 +2,4 @@
 
 ### built with React + TypeScript + Vite
 
-**[mzums.com](mzums.com)**
+**[mzums.com](https://mzums.com)**
