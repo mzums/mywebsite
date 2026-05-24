@@ -54,16 +54,7 @@ const InfiniteAutoScroll = ({
     return (
         <div
             ref={containerRef}
-            style={{
-                overflowX: 'auto',
-                overflowY: 'hidden',
-                display: 'flex',
-                flexDirection: 'row',
-                gap: '2rem',
-                scrollbarWidth: 'none',
-                msOverflowStyle: 'none',
-            }
-            }
+
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className="infinite-scroll-container"

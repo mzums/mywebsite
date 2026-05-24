@@ -44,9 +44,9 @@ function App() {
           <span className="typewriter-text">
             <Typewriter text="Hi! I'm mzums" speed={100} />
           </span>
-          <p style={{ marginTop: "2rem" }}>A Computer Science student living in Warsaw</p>
-          <p style={{ marginTop: "0.5rem" }}>I love coding, reading science fiction books and cycling</p>
-          <p style={{ marginTop: "0.5rem" }}>⚙️ Rust · Python · ML · Linux · Git</p>
+          <p className="about-text" style={{ marginTop: "2rem" }}>A Computer Science student living in Warsaw</p>
+          <p className="about-text" style={{ marginTop: "0.5rem" }}>I love coding, reading science fiction books and cycling</p>
+          <p className="about-text" style={{ marginTop: "0.5rem" }}>⚙️ Rust · Python · ML · Linux · Git</p>
           <a
             href="https://github.com/mzums"
           >
@@ -60,18 +60,21 @@ function App() {
           </a>
         </div>
       </div >
-      <span style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
-        <GearIcon dir={-1} rotation={rotation} width="200" color="#058e63" />
-      </span>
-      <span style={{ position: 'fixed', bottom: '250px', right: '20px', zIndex: 1000 }}>
-        <GearIcon rotation={rotation} width="80" color="#058e63" />
-      </span>
-      <span style={{ position: 'fixed', bottom: '50px', right: '220px', zIndex: 1000 }}>
-        <GearIcon rotation={rotation} width="110" color="#058e63" />
-      </span>
+      <div className="gears">
+        <div className="gears-container">
+          <span className="gear gear-1">
+            <GearIcon dir={-1} rotation={rotation} width="200" color="#058e63" />
+          </span>
+          <span className="gear gear-2">
+            <GearIcon rotation={rotation} width="80" color="#058e63" />
+          </span>
+          <span className="gear gear-3">
+            <GearIcon rotation={rotation} width="110" color="#058e63" />
+          </span>
+        </div>
+      </div>
 
-      <div style={{ height: "2rem" }}></div>
-
+      <div style={{ height: "10rem" }}></div>
 
       <InfiniteAutoScroll speed={0.8} pauseOnHover={true}>
         <Card
