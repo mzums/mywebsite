@@ -63,18 +63,17 @@ function App() {
       <div className="gears">
         <div className="gears-container">
           <span className="gear gear-1">
-            <GearIcon dir={-1} rotation={rotation} width="200" color="#058e63" />
+            <GearIcon dir={-1} rotation={rotation} color="#058e63" />
           </span>
           <span className="gear gear-2">
-            <GearIcon rotation={rotation} width="80" color="#058e63" />
+            <GearIcon rotation={rotation} color="#058e63" />
           </span>
           <span className="gear gear-3">
-            <GearIcon rotation={rotation} width="110" color="#058e63" />
+            <GearIcon rotation={rotation} color="#058e63" />
           </span>
         </div>
       </div>
 
-      <div style={{ height: "10rem" }}></div>
 
       <InfiniteAutoScroll speed={0.8} pauseOnHover={true}>
         <Card
@@ -116,6 +115,7 @@ function App() {
         />
 
       </InfiniteAutoScroll>
+      <div style={{ height: "10rem" }}></div>
     </>
 
   );
