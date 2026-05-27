@@ -27,7 +27,7 @@ const Typewriter = ({ text, speed = 100 }: TypewriterProps) => {
     return (
         <span>
             {displayText}
-            <span className="typing-cursor">|</span>  {/* zawsze obecny */}
+            <span className="typing-cursor">|</span>  {/* always visible */}
         </span>
     );
 };

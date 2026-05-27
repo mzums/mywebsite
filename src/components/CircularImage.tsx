@@ -5,7 +5,7 @@ const CircularImage = () => {
     return (
         <img
             src={pfp}
-            alt="Profile"
+            alt="Profile picture"
             className="pfp"
         />
     );

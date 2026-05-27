@@ -40,7 +40,7 @@ const Card = ({
                 <img
                     src={imgPath}
                     className="card-img-top"
-                    alt={title}
+                    alt={title + ' card image'}
                 />
                 <div className="card-body">
                     <div style={{ display: "flex", flexDirection: "row", alignContent: "center" }}>

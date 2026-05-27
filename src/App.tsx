@@ -6,6 +6,7 @@ import calc from "./assets/calc2.png";
 import mnist from "./assets/mnist.png";
 import openai from "./assets/openai.png";
 import uncyclopedia from "./assets/uncyclopedia2.png";
+import battleship from "./assets/battleship.png";
 import './App.css';
 import Typewriter from './components/Typewriter';
 import InfiniteAutoScroll from "./components/InfiniteAutoScroll.tsx";
@@ -112,6 +113,12 @@ function App() {
           title="OpenAI-Gymnasium"
           content="My solutions to some RL problems"
           link="https://github.com/mzums/openai-gymnasium"
+        />
+        <Card
+          imgPath={battleship}
+          title="Battleship"
+          content="A CLI/TUI game with a computer opponent using probability density heatmap to make decisions"
+          link="https://github.com/mzums/battleship"
         />
 
       </InfiniteAutoScroll>

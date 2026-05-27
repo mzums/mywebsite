@@ -3,7 +3,6 @@ body, html {
   padding: 0;
   color: white;
   font-family: monospace;
-  overflow:hidden;
 }
 
 body {
@@ -274,7 +273,7 @@ div::-webkit-scrollbar-thumb:hover {
     height: 68vw;
   }
   .card-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .card-text {
     font-size: 0.8rem;
@@ -290,7 +289,6 @@ div::-webkit-scrollbar-thumb:hover {
     align-content: center;
   }
 }
-
 
 .infinite-scroll-container {
   will-change: scroll-position;
@@ -421,5 +419,9 @@ div::-webkit-scrollbar-thumb:hover {
     bottom: 30px;
     right: 210px;
     width: 110px;
+  }
+  
+  body, html {
+    overflow:hidden;
   }
 }
