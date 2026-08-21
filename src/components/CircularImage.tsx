@@ -1,10 +1,11 @@
-import pfp from "../assets/pfp.png";
-
-
-const CircularImage = () => {
+const CircularImage = ({
+    imgPath
+}: {
+    imgPath: string
+}) => {
     return (
         <img
-            src={pfp}
+            src={imgPath}
             alt="Profile picture"
             className="pfp"
         />

@@ -7,6 +7,10 @@ import mnist from "./assets/mnist.png";
 import openai from "./assets/openai.png";
 import uncyclopedia from "./assets/uncyclopedia2.png";
 import battleship from "./assets/battleship.png";
+import plgen from "./assets/plgen.png";
+import pfp from "./assets/pfp.png";
+import fakewiki from "./assets/fakewiki.png";
+import bonsaigen from "./assets/bonsaigen.png";
 import './App.css';
 import Typewriter from './components/Typewriter';
 import InfiniteAutoScroll from "./components/InfiniteAutoScroll.tsx";
@@ -38,7 +42,7 @@ function App() {
     <>
 
       <div className="main-row" >
-        <CircularImage />
+        <CircularImage imgPath={pfp} />
         <div
           className="about-me"
         >
@@ -80,15 +84,27 @@ function App() {
         <Card
           imgPath={tm}
           title="Typeman"
-          content="Typing speed test written in Rust with practice mode in GUI, TUI and CLI"
-          stats={[180, 11]}
+          content="Fully customizable typing test and practice tool written in Rust, featuring GUI, TUI and CLI"
+          stats={[185, 12]}
           link="https://github.com/mzums/typeman"
+        />
+        <Card
+          imgPath={fakewiki}
+          title="FakeWiki"
+          content="Custom-trained 124M-parameter model for generating Wikipedia-like articles"
+          link="https://github.com/mzums/fakewiki"
         />
         <Card
           imgPath={uncyclopedia}
           title="uncyclopedia-api"
           content="Fastapi API for Uncyclopedia and it's Polish alternative - Nonsensopedia"
           link="https://github.com/mzums/uncyclopedia-api"
+        />
+        <Card
+          imgPath={bonsaigen}
+          title="bonsaigen"
+          content="A model that generates bonsai trees, trained on cbonsai"
+          link="https://github.com/mzums/bonsaigen"
         />
         <Card
           imgPath={ttt}
@@ -115,9 +131,15 @@ function App() {
           link="https://github.com/mzums/openai-gymnasium"
         />
         <Card
+          imgPath={plgen}
+          title="Polish word generation"
+          content="generating nonce-words that sound naturally Polish using MLP, API available"
+          link="https://github.com/mzums/polish_word_generation"
+        />
+        <Card
           imgPath={battleship}
           title="Battleship"
-          content="A CLI/TUI game with a computer opponent using probability density heatmap to make decisions"
+          content="CLI/TUI game with a computer opponent using probability density heatmap to make decisions"
           link="https://github.com/mzums/battleship"
         />
 
